@@ -1,0 +1,35 @@
+{
+  "name": "@high-standards-js/git-authors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "postinstall": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@high-standards-js/base": "^1.4.0",
+    "@high-standards-js/husky": "^1.0.2",
+    "husky": "4.2.5"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/github": "7.0.7",
+    "@semantic-release/npm": "7.0.5",
+    "@semantic-release/release-notes-generator": "9.0.1",
+    "husky": "4.2.5",
+    "semantic-release": "17.0.8"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "engines": {
+    "node": ">=12.16.1"
+  }
+}
