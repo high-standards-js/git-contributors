@@ -10,7 +10,7 @@
   "dependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@high-standards-js/base": "^1.4.0",
-    "@high-standards-js/husky": "^1.0.2",
+    "@high-standards-js/husky": "^1.1.1",
     "commitlint": "8.3.5",
     "husky": "4.2.5"
   },
