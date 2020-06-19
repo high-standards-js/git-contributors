@@ -6,7 +6,6 @@
   "scripts": {
     "postinstall": "node src/index.js"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@high-standards-js/base": "^1.4.0",
@@ -31,5 +30,8 @@
   },
   "engines": {
     "node": ">=12.16.1"
-  }
+  },
+  "contributors": [
+    "emi190396 <emily.lorenz@oliverlorenz.com>"
+  ]
 }
