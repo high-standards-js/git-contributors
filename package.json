@@ -1,5 +1,5 @@
 {
-  "name": "@high-standards-js/git-authors",
+  "name": "@high-standards-js/git-contributors",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -8,11 +8,14 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@commitlint/config-conventional": "^8.3.4",
     "@high-standards-js/base": "^1.4.0",
     "@high-standards-js/husky": "^1.0.2",
+    "commitlint": "8.3.5",
     "husky": "4.2.5"
   },
   "devDependencies": {
+    "@high-standards-js/commitlint": "^1.0.2",
     "@semantic-release/commit-analyzer": "8.0.1",
     "@semantic-release/github": "7.0.7",
     "@semantic-release/npm": "7.0.5",
