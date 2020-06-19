@@ -1,5 +1,5 @@
 const base = require('@high-standards-js/base');
-const husky = require('@high-standards-js/husky')
+const husky = require('@high-standards-js/husky');
 
 (async() => {
     await base.checkAcceptedHighStandards();
@@ -12,7 +12,7 @@ const husky = require('@high-standards-js/husky')
         packageJsonOfConfig, 
         'pre-commit', 
         'git-authors-cli'
-    )
+    );
     
     base.writeInitiatingProjectPackageJson(packageJsonOfConfig);
-})()
+})();
