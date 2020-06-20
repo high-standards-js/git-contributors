@@ -9,18 +9,23 @@
   "license": "ISC",
   "dependencies": {
     "@commitlint/config-conventional": "^8.3.4",
-    "@high-standards-js/base": "^1.4.0",
-    "@high-standards-js/husky": "^1.1.1",
+    "@high-standards-js/base": "^1.7.7",
+    "@high-standards-js/husky": "^1.1.3",
     "commitlint": "8.3.5",
     "husky": "4.2.5"
   },
   "devDependencies": {
-    "@high-standards-js/commitlint": "^1.0.2",
+    "@commitlint/config-conventional": "8.3.4",
+    "@high-standards-js/commitlint": "^1.0.4",
     "@semantic-release/commit-analyzer": "8.0.1",
     "@semantic-release/github": "7.0.7",
     "@semantic-release/npm": "7.0.5",
     "@semantic-release/release-notes-generator": "9.0.1",
+    "commitlint": "8.3.5",
+    "git-authors-cli": "1.0.27",
     "husky": "4.2.5",
+    "lint-staged": "10.2.11",
+    "prettier": "2.0.5",
     "semantic-release": "17.0.8"
   },
   "publishConfig": {
@@ -28,7 +33,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
   },
   "engines": {
@@ -36,5 +42,11 @@
   },
   "contributors": [
     "emi190396 <emily.lorenz@oliverlorenz.com>"
-  ]
+  ],
+  "lint-staged": {
+    "*.{ts,js,json,css,yaml}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
