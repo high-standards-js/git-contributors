@@ -12,13 +12,13 @@
     "@high-standards-js/husky": "^1.1.4"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "9.0.1",
+    "@commitlint/config-conventional": "9.1.2",
     "@high-standards-js/commitlint": "^1.0.6",
     "@semantic-release/commit-analyzer": "8.0.1",
     "@semantic-release/github": "7.0.7",
     "@semantic-release/npm": "7.0.5",
     "@semantic-release/release-notes-generator": "9.0.1",
-    "commitlint": "9.0.1",
+    "commitlint": "9.1.2",
     "git-authors-cli": "1.0.27",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
