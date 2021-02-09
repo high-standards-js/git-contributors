@@ -21,7 +21,7 @@
     "commitlint": "9.0.1",
     "git-authors-cli": "1.0.27",
     "husky": "4.2.5",
-    "lint-staged": "10.2.11",
+    "lint-staged": "10.5.4",
     "prettier": "2.0.5",
     "semantic-release": "17.0.8"
   },
